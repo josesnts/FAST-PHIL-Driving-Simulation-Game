@@ -27,7 +27,7 @@ include "../databaseConnection/connect.php";
                     echo 
                     '<script> 
                         alert("Member now Registered Successfully!");
-                        window.location.href = "../postGame/license.php";
+                        window.location.href = "../mainGame/index.html";
                     </script>';
                   } else {
                     echo "Error: " . $result . "<br>" . $connect->error;
