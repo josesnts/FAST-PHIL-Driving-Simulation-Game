@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/FAST-PHIL-LOGO.ico">
+    <link rel="icon" type="image/x-icon" href="../images/FAST-PHIL-LOGO.ico">
     <!-- CSS Link  -->
     <link rel="stylesheet" href="styles.css">
     <!-- Bootstrap CSS Link -->
