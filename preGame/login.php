@@ -36,7 +36,7 @@
                                 <span class="input-group-text bg-danger" id="basic-addon1">
                                 <i class="fa-solid fa-user text-light"></i>
                                 </span>
-                                <input type="username" class="form-control" name="username" placeholder="Enter username"
+                                <input type="text" class="form-control" name="username" placeholder="Enter username"
                                 aria-label="Username" aria-describedby="basic-addon1"></label>
                             </div>
 
@@ -49,8 +49,6 @@
                                 <input type="password" class="form-control" name="password" placeholder="Enter password"
                                 aria-label="Password" aria-describedby="basic-addon1"></label>
                             </div>
-
-
 
                             <!-- Submit Button -->
                                 <div class="form-group">

@@ -33,7 +33,7 @@ include "../databaseConnection/connect.php";
 
                         $login_information = "INSERT INTO `memberlogin` (`username`, `loginTimestamp`) VALUES ('$username', '$loginTimestamp')";
                         $login_result = $connect->query($login_information);
-                        header("Location: ../mainGame/index.html");
+                        header("Location: ../mainGame/fastphildsg_game/index.php");
                 
             } 
         }
