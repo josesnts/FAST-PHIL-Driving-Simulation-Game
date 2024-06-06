@@ -27,6 +27,7 @@ include "../databaseConnection/connect.php";
 
                         session_start();
                         $_SESSION["id"]=$id;
+                        
                                     
                         date_default_timezone_set("Asia/Manila");
                         $loginTimestamp = date("Y-m-d H:i:s");

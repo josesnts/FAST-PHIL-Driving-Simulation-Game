@@ -32,7 +32,7 @@ session_start();
 <body class="overflow-hidden">
     <div class="bg-image d-flex align-items-center justify-content-center flex-column"
                     style="
-                        background-image: url('images/displayBackground.svg');
+                        background-image: url('../images/displayBackground.svg');
                         height: 100vh;
                         width: 1560px;
                         background-repeat: no-repeat;
@@ -40,7 +40,7 @@ session_start();
                     "
     >
                  <?php      
-                    include "databaseConnection/connect.php"; 
+                    include "../databaseConnection/connect.php"; 
                     $id=$_SESSION["id"];
                     $select_query="SELECT *
                     FROM `fastphildsg_users`
@@ -54,7 +54,7 @@ session_start();
                 ?>
         <div class="row">
             <div class="col-md-6 d-flex align-items-center justify-content-center flex-column">
-                <img src="images/FAST-PHIL-LOGO.png" alt="" class="w-75">
+                <img src="../images/FAST-PHIL-LOGO.png" alt="" class="w-75">
                 <h3 class="text-light">
                     Welcome, 
                     <b>
@@ -69,54 +69,27 @@ session_start();
                     </a>
                 </h5>
             </div>
-            <div class="col-md-6 d-flex flex-column">
-                <a href="tdc/instructions.php">
-                    <img src="images/theoreticalButton.png" alt="" class="mt-5" style="width: 75%">
-                </a>
-                
-                <?php
-                    if ($status=='TDC_Complete'){
-                    ?>
-                    <a href="">
-                        <img src="images/practicalButton.png" alt="" class="mt-5" style="width: 75%">
-                    </a>
-                    <?php
-                    }
-                    elseif ($status=='Game_Complete'){
-                    ?>
-                    <a href="tdc/index.php">
-                        <img src="images/practicalButton.png" alt="" class="mt-5" style="width: 75%">
-                    </a>
-                    <?php
-                    }
-                    else{
-                    ?>
-                    <img src="images/practicalButton_Locked.png" alt="" class="mt-5" style="width: 75%">
-                    <?php
-                    }
-                    ?>
-                
-                    <?php
-                    if ($status=='PDC_Complete'){
-                    ?>
-                    <a href="">
-                        <img src="images/parkingButton.png" alt="" class="mt-5" style="width: 75%">
-                    </a>
-                    <?php
-                    }
-                    elseif ($status=='Game_Complete'){
-                    ?>
-                    <a href="">
-                        <img src="images/parkingButton.png" alt="" class="mt-5" style="width: 75%">
-                    </a>
-                    <?php
-                    }
-                    else{
-                    ?>
-                    <img src="images/parkingButton_Locked.png" alt="" class="mt-5" style="width: 75%">
-                    <?php
-                    }
-                    ?>
+            <div class="col-md-6 d-flex align-items-center justify-content-center flex-column text-light">
+               <h1>
+                    <b>
+                        Course Guidelines:
+                    </b>
+               </h1>
+               <h5>
+                <ul>
+                    <li class="mt-3">
+                        You will be needing to answer <b>ALL QUESTIONS</b> in the course
+                    </li>
+                    <li class="mt-3">
+                        You will be given 30 minutes to finish the course
+                    </li>
+                    <li class="mt-3">
+                        You needed to get atleast <b>75%</b> to pass the course
+                    </li>
+                </ul>
+               </h5>
+
+               <a href="index.php" class="btn btn-primary w-75"> Start Course <i class="fa-solid fa-caret-right"></i> </a>
 
             </div>
         </div>
